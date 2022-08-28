@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.logo
+{
+    width: 70px;
+    height: 70px;
+    background-image: url("logo_new.png");
+    margin-left: 550px;
+    margin-bottom: 50px;
+
+    
+}
+.keyboard_wrapper {
+    width: 740px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow:
+        -4px -4px 8px #fff,
+        4px 4px 8px #0002;
+}
+.virtualkeyboard
+{
+    width: fit-content;
+    height:fit-content;
+}
+.keyboard_wrapper .display {
+    position: relative;
+    font-size: 18px;
+    font-family: inherit;
+    height: 200px;
+    border-radius: 15px;
+    height: 200px;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 2px inset #fff;
+    white-space: pre-wrap;
+    box-shadow:
+        inset 2px 2px 5px #0002,
+        inset -2px -2px 5px #fff;
+}
+.containerontent
+{
+    height: 500px;
+    width: 1700px;
+    align-items: center;
+    justify-content: center;
+}
+.keyboard_wrapper .display::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(45deg, #ffffff52, #0000001a);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.keyboard_wrapper .key {
+    margin-top: 20px;
+    text-transform: lowercase;
+    user-select: none;
+}
+.keyboard_wrapper .key .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.keyboard_wrapper .key .row span {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    box-shadow:
+        3px 3px 6px #0002,
+        -3px -3px 6px #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.keyboard_wrapper .key .row span.caps,
+.keyboard_wrapper .key .row span.backspace {
+    width: calc(50px * 1.6);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.keyboard_wrapper .key .row span.space {
+    width: calc(50px * 9.4);
+}
+.keyboard_wrapper .key .row span.active,
+.keyboard_wrapper .key .row span:hover {
+    border-color: orange;
+    color: orangered;
+}
+.keyboard_wrapper .key .row span.active,
+.keyboard_wrapper .key .row span:active {
+    box-shadow:
+        inset 3px 3px 6px #0002,
+        inset -3px -3px 6px #fff;
+}
+.keyboard_wrapper .key.uppercase {
+    text-transform: capitalize;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    padding-bottom:50px;
+}
+.containerContent
+{
+    height: 50px;
+}
+
+.container
+{
+    position:relative;
+    /* padding-bottom: 80vh; */
+    align-items: center;
+    justify-content: center;
+}
+.container3
+{
+    margin-top: 200px;
+    width:1200px;
+    display:flex;
+    flex-direction: row;
+}
+.container2
+{
+    margin-top: 600px;
+    display:flex;
+    flex-direction: column;
+
+}
+.text1
+{
+    margin-top: 200px;
+    margin-left: 100px;
+
+    height:100px;
+    width: 400px;
+}
+.panel
+{
+    background-image: url('aslapbanner.jpg') ;
+    margin-top: 50px;
+    height: 415px;
+    width:700px;
+    border-radius: 25px;
+}
+
+
+.search
+{
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: #fff;
+}
+.search::placeholder
+{
+    color:#000;
+}
+.search:focus
+{
+    outline:none;
+    background-color: var(--primary-color);
+}
+.Border
+{
+    height:10px;
+}
+.box
+{
+
+    font-family: 'Muli';
+    background-color: maroon;
+    color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    height: 200px;
+    margin-left:100px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(200%);
+    transition: transform 1s ease
+}
+
+.box:nth-of-type(even)
+{
+    transform: translateX(-200%);
+}
+
+.box.show
+{
+    transform: translateX(0);
+}
+.box h2
+{
+    font-size: 45px;;
+}
+.hero
+{
+    background-image: url('HeaderGif2\ \(1\).gif');
+    height: 300vh;
+    width: 200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+.hero::before
+{
+    content: '';
+    position: absolute;    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.hero h1
+{
+    font-size: 50px;
+    margin: -20px 0 20px;
+}
+.hero p
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.hero-2
+{
+    background-image: url('ban1_1.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+.hero-2::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.hero-2 h1
+{
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+.hero-2 p
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.content h2, .content h3
+{
+    font-size: 150%;
+    margin: 20px 0;
+}
+.content p
+{
+    color: #555;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+/* allrelated to body */
+.count
+{
+    font-size: 50px;
+    margin : 0;
+}
+.p3
+{
+    text-align: center;
+    display: flex;
+}
+.myid
+{
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+}
+.windowcomp
+{
+    display:flex;
+    flex-direction: row;
+    width:1200px;
+    height: 300px;
+    
+    margin-top: 100px;
+}
+.windows
+{
+    background-image: url("wlak.jpg");
+    height: 300px;
+    width:300px;
+    margin-right: 10px;
+    background-color: lavender;
+    border-radius: 25px;
+
+}
+.windows1
+{
+    background-image: url("conference.jpg");
+    height: 300px;
+    width:300px;
+    margin-left: 25px;
+    background-color: lavender;
+    border-radius: 25px;
+}
+.windows2
+{
+     background-image: url("independanceAICTE.jpeg");
+    height: 300px;
+    width:300px;
+    margin-left: 25px;
+    background-color: lavender;
+    border-radius: 25px;
+
+}
+.windows3
+{   
+    background-image: url("Scheme\ page.jpg");
+    height: 300px;
+    width:300px;
+    margin-left: 25px;
+    background-color: lavender;
+    border-radius: 25px;
+
+}
+.window4
+{
+    background-image: url("banner_0.jpg");
+    margin-top: 100px;
+    height: 500px;
+    width:880px;
+    margin-left: 100px;
+    background-color: lavender;
+    border-radius: 25px;
+
+}
+.text2
+{
+    margin-top: 100px;
+    width: 1200px;
+    height: 300px
+
+}
+.text4
+{
+    display:flex;
+    flex-direction: row;
+    width: 1200px;
+    align-items: centre;
+    justify-content: center;
+    
+}
+
+.scheme1
+{
+    /* background-image: url("wlak.jpg"); */
+    /* margin-left:50px; */
+    margin-right:100px;
+}
+.scheme2
+{
+    /* background-image: url("conference.jpg"); */
+
+    margin-left:150px;
+    margin-right:100px;
+}
+.scheme3
+{
+    margin-left:100px;
+    margin-right:100px;
+}
+.scheme4
+{
+    margin-left:100px;
+    margin-right:100px;
+}
+.box2
+{
+    width:auto;
+    margin-top: 30px;
+    height: 30px;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.hero2
+{
+    height: 1500px;
+    background-color: black;
+}
+.nav
+{
+    /* position: fixed; */
+    background-color: #4B4341 
+ ;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+.nav .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    transition: all 0.3s ease-in-out;
+}
+.nav ul
+{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.nav a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+.nav.active
+{
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+.nav.active a
+{
+    color: #000;
+}
+.nav.active.container
+{
+    padding: 10px 0;
+}
+.nav a.current, .nav a:hover
+{
+    background-color: #fff;
+    border-radius: 25px;
+    color: #c0392b;
+    font-weight: bold;
+}
+/* .keyboard_wrapper {
+    width: 740px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow:
+        -4px -4px 8px #fff,
+        4px 4px 8px #0002;
+}
+.keyboard_wrapper .display {
+    position: relative;
+    font-size: 18px;
+    font-family: inherit;
+    height: 200px;
+    border-radius: 15px;
+    height: 200px;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 2px inset #fff;
+    white-space: pre-wrap;
+    box-shadow:
+        inset 2px 2px 5px #0002,
+        inset -2px -2px 5px #fff;
+}
+.keyboard_wrapper .display::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(45deg, #ffffff52, #0000001a);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.keyboard_wrapper .key {
+    margin-top: 20px;
+    text-transform: lowercase;
+    user-select: none;
+}
+.keyboard_wrapper .key .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.keyboard_wrapper .key .row span {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+    box-shadow:
+        3px 3px 6px #0002,
+        -3px -3px 6px #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.keyboard_wrapper .key .row span.caps,
+.keyboard_wrapper .key .row span.backspace {
+    width: calc(50px * 1.6);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.keyboard_wrapper .key .row span.space {
+    width: calc(50px * 9.4);
+}
+.keyboard_wrapper .key .row span.active,
+.keyboard_wrapper .key .row span:hover {
+    border-color: orange;
+    color: orangered;
+}
+.keyboard_wrapper .key .row span.active,
+.keyboard_wrapper .key .row span:active {
+    box-shadow:
+        inset 3px 3px 6px #0002,
+        inset -3px -3px 6px #fff;
+}
+.keyboard_wrapper .key.uppercase {
+    text-transform: capitalize;
+} */
+
+/* all related to nav */

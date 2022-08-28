@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <div id="myid" style="color: red; width: 50%;"></div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AICTE</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+   <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+	<script>
+		function loadGoogleTranslate()
+		{
+			new google.translate.TranslateElement("myid")
+		}
+	</script>
+<div id="myid" style="color: red; width: 50%;"></div>
+
+    </div>
+    
+        <nav class="nav">
+        <div class="container">
+            <a href="logo_new.png"></a>
+            <h1 class="current"><a href="index.html" style="color: #c0392b;">AICTE</a></h1>
+            <ul>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Newsroom.html">Newsroom</a></li>
+                <li><a href="Bureaus.html">Bureaus</a></li>
+                <li><a href="Initiatives.html">Initiatives</a></li>
+                <li><a href="Schemes.html">Schemes</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Opportunities.html">Opportunities</a></li>
+                <li><a href="Statistics.html">Statistics</a></li>
+                <li><a href="Bulletins.html">Bulletins</a></li>
+                <li><a href="Bulletins.html">Login</a></li>
+            </ul>
+            <header>
+
+
+                <!-- speech recognitor  -->
+                <!-- speech recognitor  -->
+                <!-- speech recognitor  -->
+
+                <form id="form">
+                    
+                    <label for="Speech Recogintion"></label>
+                    <input type="text" name="" id="speechToText"
+                    placeholders="speak something" onclick=record()>
+                    <script>
+                        function record(){
+                            var recognition = new webkitSpeechRecognition();
+                    recognition.lang = "en-GB";
+
+                    recognition.onresult = function(event){
+                        console.log(event);
+                        document.getElementById('speechToText').value = event.results[0][0].transcript;
+
+                    }
+                    recognition.start();
+                    }
+                    </script>
+
+                </form>
+
+                <!-- speech recognitor  -->
+                <!-- speech recognitor  -->
+                <!-- speech recognitor  -->
+
+            </header>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAEc0lEQVRYhcWXfWwTZRzHP89d27XbWNe90XUZk91GNzDEKEaNAokovkam0WhECfGF8PKPgUTQBIMvUSMxmmAQYiQGI+jEQIJBXZBIGME4BIOwCGwKDMuArl3fr+31zj8KSteyrReVb3L//O6e7+9zz+/3PPccXGMJswNbWlpKDMOYASCEONjX15c04yOZGeT1eie7JmgDQDfQ7SrXzni93sn/G4C7Sv0qEJZrWxpSKA0pAhG5zu1St5nxspgZ5B+Wrwf4/NVBJAE3Pz8JfygbK1aymUHNTc5lcVUqPzVgJRUXKB6NRne6a//h2GfFehXVhDtWV9xyaMC+fefPZfXheG71apwZ7pkeOzfDnZz30Nvhnn8d4JMVro3r9zgXDYWzk+au0rDIYLcZJNMwcMH6N8iSOaENC9cGl4zXe0xteqHyo/a2ZkNRFGPhIx6jd5vDMHrknOtop8NY0NFgKIpiTG1rNjavcG0cj/eYPbDrNdft7+yq/CCmSjz7YIi1S/3UVmbynqtzZeiYGSWaEBw8bueoz3bThsX6N1t/SP45mv+Yy3DfSdv2YFRm9g0JVs0PIkYpmhDw8tNB7pieYCgss/eYo3Ms/1EB9r3ldHUdKa0FePHJwKjJr4RYOT8AwJ5jjkkbF3lKTQOcC1mWDkcllIYU3knpsbNfUntTmuaJGqGkLC4Oph8wDXA+aswC8DaOP/lltVWnAIhpYrZpgKgqNwLU12jFZY+AW842qpqxNJkGCKmiCqCuUi8OoF+iriwLEE8b9aYBhuPyBIA6VxEzcEaCgKCuNAsQTUs1pgGGYpItC5C/7gsqDPyeXSqXASJJyWkawB+2yOMGiAJHJLhUrcsAoZRcVjRAZyfyumXV3/uGZCFLBu6qMUowDBySIfXPRlFfriNLMBiTrKvud3+4Zk3hXHnBzjXYdm/1RN7/tvJOLSN4Yk4ER4lROLEBnJXgFxlGMDosOgumRdB0wZfHyxYf391wuvOx/K0/LzB7WnXXlv0TplRVZHj9uQCL54UK74Ax4FcZfCILUkCzGlWanBl6ztnoH7ZVVFdYq7tPxnZd+Uzeiei3C9YZAMsfH6ZjZjTfNSDgrAD/+L7k81pixFKCV7pd+GK2u0fezwOwCUMFKgb9MqgCkgbEBQQFBIFk8QfpwVh2ogV63hvlAZSpvCQEH6/fUcmhnxw4S3JXgKYLTgSs1JdruOzZlg8kJHxRC23VaSxSbj1CSZkffSVIAhor9HUj8xV8neVzJ37adbrsqYRm+rchR3aLbsxtSmx+r2tw4bgAAN59uGZKRJMf1SBnJ9t9ynHvxbjcPn9qlFs92X+RA74StvSWU1ua6b3rusR3OQkkLth0vli98/wfhfJc9Vi+Yrv/BPDmyLiiKBrQnsrAfc1xAPYO2AG4GJe/fmPn+ZVX8yykoue4tbW1Xdf1w0DJtJp0CuCY32oDkkKIG/v6+nr/UwAARVE6gE2A61IoCDzT39+/o1gv013m8XhK7Xb7bQCqqh7w+Xxxs17XVH8BfLSW2/vtkAEAAAAASUVORK5CYII=">
+            </form>
+            
+        </div>
+    </nav>
+    </div>
+    
+    <!-- all related to navigation bar -->
+    
+    <div>
+        <div class="hero">
+            <div class="container">
+                <div class="container2">
+                    <div class="logo">
+                    </div>
+                    <h1>Welcome To AICTE</h1>
+                        <p>All India Council For Technical Education</p>
+                        <div class="container3">
+                            <div class="panel">
+                            </div>
+                            <div class="text1">
+                                <p>State-level Webinar for Implementation of PARAKH
+                                   Tuesday, August 2, 2022
+                                   for the State Rajasthan, Delhi and Himachal</p>
+                            </div>
+                        </div>
+                        <div class="windowcomp">
+                            <div class="windows"></div>
+                            <div class="windows1"></div>
+                            <div class="windows2"></div>
+                            <div class="windows3"></div>
+                        </div>
+                        <div class="text4">
+                            <div class="scheme1">Scheme 1</div>
+                            <div class="scheme2">Launch Event</div>
+                            <div class="scheme3">Independance Day</div>
+                            <div class="scheme4">Faculty Development schemes</div>
+
+                            
+                        </div>
+                        <div class="window4">
+
+                        </div>
+                        <div class="text2">
+                            <p>New Delhi: The All India Council for Technical Education (AICTE) announced on Monday that it has partnered with Microsoft to empower students and educators with future skills. As part of this partnership, more than 1,500 Microsoft course modules are made available to students and educators free of charge via the ELIS of AICTE’s e-learning portal. Microsoft’s learning resource center, Microsoft Learn, is integrated with the ELIS platform to provide access to personalized learning pathways and resources for students, which include a wide range of technologies, including AI, IoT, computer science, and cloud computing, among others.</p>
+                        </div>
+                </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="alan_btn"></div>
+        
+        
+        <script type="text/javascript"
+        src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+            <script>
+                var alanBtnInstance = alanBtn({
+                key: "1ea6a4fb0c200ecf6e7599a3c30656752e956eca572e1d8b807a3e2338fdd0dc/stage",
+                onCommand: function (commandData) {
+                if (commandData.command === "go:back") {
+                    //call client code that will react on the received command
+                }
+                },
+                rootEl: document.getElementById("alan-btn"),
+                });
+            </script>
+        </div>
+            </div>
+            <div class="containerontent" style="align-items: center;">
+                <h2>About Us</h2>
+                <p>All India Council for Technical Education (AICTE) was set up in November 1945 as a national-level Apex Advisory Body to conduct a survey on the facilities available for technical education and to promote development in the country in a coordinated and integrated manner.</p>
+                
+
+            <div class="hero-2">
+                <div class="container">
+                    <h1>Welcome To AICTE</h1>
+                    <p>All India Council For Technical Education</p>
+                </div>
+            </div>
+
+            
+            <div class="box"><h2>National e-Scholarship is the one-stop solution to help students seek various scholarships.</h2></div>
+            <div class="box"><h2>Vidya Lakshmi is a first-of-its-kind portal for students seeking educational loan.</h2></div>
+            <div class="box"><h2>Scholarship for girls under the Pragati Scheme and scholarship for differently-abled students under Saksham Scheme.</h2></div>
+            <div class="box"><h2>India's largest innovation challenges jointly promoted by the CII and Department of Science & Technology.</h2></div>
+            <div class="box"><h2>Unnat Bharat Abhiyan for transformational change in rural development processes</h2></div>
+            <div class="box"><h2>Aicte-scheme for promoting interests, creativity and ethics among students (spices)</h2></div>
+            <div class="box"><h2>Introduction/Continuation of Supernumerary Seats for Foreign Nationals/Overseas Citizen of India (OCI) Children of Indian Workers in Gulf Countries.</h2></div>
+            <div class="box"><h2>Compassionate Integrity 'I'raining Self-directed Learning (CIT-SDL) course for developing emotional intelligence skills.</h2></div>
+            <div class="box"><h2>Corrigendum: RFP and uploading of Scope of work</h2></div>
+            
+            <script src="script.js"></script>
+            <script src="text/javascript"></script>
+
+            <div class="box2"><p3>Number of Views on the page : </p3><h5 id = "count">0</h5></div>
+
+            <script>
+                const countEL = document.getElementById('count');
+
+                updateVisitCount();
+
+                function updateVisitCount()
+                {
+                    fetch("https://api.countapi.xyz/update/count/?amount=1")
+                        .then((res)=> res.json())
+                        .then((res) => {
+                        countEL.innerHTML= res.value;
+                    });
+                }
+            </script>
+            <div class="Border">
+                <div class="container">
+                    <h6>All Rights Reserved</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
